@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-dvgloss
 Version:	0.1
-Release:	8
+Release:	9
 Summary:	Facilities for setting interlinear glossed text
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dvgloss
