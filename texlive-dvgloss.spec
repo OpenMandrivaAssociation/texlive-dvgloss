@@ -1,19 +1,13 @@
-# revision 29103
-# category Package
-# catalog-ctan /macros/latex/contrib/dvgloss
-# catalog-date 2013-02-13 12:56:56 +0100
-# catalog-license lppl
-# catalog-version 0.1
 Name:		texlive-dvgloss
-Version:	0.1
-Release:	10
+Version:	29103
+Release:	1
 Summary:	Facilities for setting interlinear glossed text
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dvgloss
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvgloss.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvgloss.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvgloss.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvgloss.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvgloss.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvgloss.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ are built in, but some flexible and powerful facilities are
 included for adding your own.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -45,7 +39,8 @@ included for adding your own.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
