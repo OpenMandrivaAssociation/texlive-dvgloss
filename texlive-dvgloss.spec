@@ -1,6 +1,6 @@
 Name:		texlive-dvgloss
 Version:	29103
-Release:	1
+Release:	2
 Summary:	Facilities for setting interlinear glossed text
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dvgloss
