@@ -3,7 +3,7 @@ Version:	29103
 Release:	2
 Summary:	Facilities for setting interlinear glossed text
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/dvgloss
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/dvgloss
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvgloss.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvgloss.doc.r%{version}.tar.xz
